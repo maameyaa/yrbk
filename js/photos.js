@@ -1,7 +1,7 @@
 // funtion to display all the photos in a grid
 
 $(document).ready(function(){
-  var folder = "classPictures/2018/";
+  var folder = "img/schools/ashesi/classes/2018/"; 
 
 $.ajax({
     url : folder,
