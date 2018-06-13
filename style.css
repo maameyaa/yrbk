@@ -2799,6 +2799,29 @@ body.side-push-panel.stretched .slider-parallax-inner {
 	transition: opacity .3s ease;
 }
 
+.overlay {
+  position:fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  z-index:9999;
+  background-color:black;
+  color:white;
+  padding:10% 0;
+  opacity: 0.75;
+  text-align:center;
+	-webkit-backface-visibility: hidden;
+	-webkit-transition: opacity .3s ease;
+	-o-transition: opacity .3s ease;
+	transition: opacity .3s ease;
+}
+
+.centre {
+	margin-left: auto;
+  margin-right: auto;
+}
+
 body.side-panel-open .body-overlay {
 	opacity: 1;
 	z-index: 298;
@@ -13571,5 +13594,3 @@ body:not(.no-transition) #wrapper,
 	-webkit-text-stroke: 0px !important;
 	text-shadow: none !important;
 }
-
-

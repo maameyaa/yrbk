@@ -1,3 +1,5 @@
+// funtion to display all the photos in a grid
+
 $(document).ready(function(){
   var folder = "classPictures/2018/";
 
@@ -13,3 +15,17 @@ $.ajax({
     }
 });
 });
+
+
+//funtion for pin/key modal
+(function() {
+var o = document.getElementById('modal-key');
+o.getElementsByTagName('form')[0].onsubmit = function() {
+    if (this.answer.value === 'yrbk2018') {
+        o.style.display = "none";
+    } else {
+      $("#pin").css("animation","shake 0.5s");
+    }
+    return false;
+};
+})();
