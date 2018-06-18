@@ -20,7 +20,7 @@
 
 	<!-- Document Title
 	============================================= -->
-	<title>BTS | YRBK</title>
+	<title>Ashesi University Yearbook| YRBK</title>
 
 </head>
 
@@ -32,7 +32,7 @@
 
 		<!-- Header
 		============================================= -->
-		<header id="header" class="">
+		<header id="header" class="page-section">
 
 			<div id="header-wrap">
 
@@ -43,8 +43,8 @@
 					<!-- Logo
 					============================================= -->
 					<div id="logo">
-						<!-- <a href="index.html" class="standard-logo" data-dark-logo="Logos/whiteLogo.png"><img src="Logos/blackLogo.png" alt="YRBK Logo"></a>
-						<a href="index.html" class="retina-logo" data-dark-logo="Logos/whiteLogo.png"><img src="Logos/blackLogo.png" alt="YRBK Logo"></a> -->
+						<a href="index.html" class="standard-logo" data-dark-logo="Logos/whiteLogo.png"><img src="Logos/blackLogo.png" alt="YRBK Logo"></a>
+						<a href="index.html" class="retina-logo" data-dark-logo="Logos/whiteLogo.png"><img src="Logos/blackLogo.png" alt="YRBK Logo"></a>
 					</div><!-- #logo end -->
 
 					<!-- Primary Navigation
@@ -54,11 +54,11 @@
 						<ul>
 							<li><a href="index.html"><div>Home</div></a>
 							</li>
-							<li><a href="schools.html"><div>Schools</div></a>
+							<li class="current"><a href="schools.html"><div>Yearbooks</div></a>
 							</li>
 							<li class="mega-menu"><a href="photo-grid.html"><div>Photo</div></a>
 							</li>
-							<li class="current"><a href="videos.html"><div>Behind the Scenes</div></a>
+							<li class="mega-menu"><a href="videos.html"><div>Behind the Scenes</div></a>
 							</li>
 							<li class="mega-menu"><a href="about.html"><div>About</div></a>
 							</li>
@@ -123,12 +123,11 @@
 		<section id="page-title">
 
 			<div class="container clearfix">
-				<h1>Ashesi University College</h1>
-				<span>Video Content</span>
+				<!-- <h1>Blog</h1> -->
+				<span>Ashesi University Yearbooks</span>
 				<!-- <ol class="breadcrumb">
 					<li class="breadcrumb-item"><a href="#">Home</a></li>
-					<li class="breadcrumb-item"><a href="#">Shortcodes</a></li>
-					<li class="breadcrumb-item active" aria-current="page">Media Embeds</li>
+					<li class="breadcrumb-item active" aria-current="page">Blog</li>
 				</ol> -->
 			</div>
 
@@ -142,128 +141,78 @@
 
 				<div class="container clearfix">
 
-					<!-- Post Content
+					<!-- Posts
 					============================================= -->
-					<div class="postcontent nobottommargin clearfix">
+					<div id="posts" class="post-grid grid-container grid-2 clearfix" data-layout="fitRows">
 
-						<!-- <h3>Vimeo Embed</h3>
-
-						<iframe src="http://player.vimeo.com/video/94842405" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
-						<div class="divider"><i class="icon-circle"></i></div> -->
-
-						<!-- <h3>Youtube Embed</h3> -->
-
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/xYEGFHRppbc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
-						<div class="divider"><i class="icon-circle"></i></div>
-
-						<!-- <h3>Dailymotion Embed</h3>
-
-						<iframe frameborder="0" width="560" height="315" src="http://www.dailymotion.com/embed/video/x1abbei" allowfullscreen></iframe>
-
-						<div class="divider"><i class="icon-circle"></i></div>
-
-						<h3>Soundcloud Embed</h3>
-
-						<iframe width="100%" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/115823769&amp;auto_play=false&amp;hide_related=true&amp;visual=true"></iframe>
-
-						<div class="divider"><i class="icon-circle"></i></div>
-
-						<h3>HTML5 Video Embed</h3>
-
-						<video poster="images/videos/explore.jpg" preload="auto" controls style="display: block; width: 100%;">
-							<source src='images/videos/explore.webm' type='video/webm' />
-							<source src='images/videos/explore.mp4' type='video/mp4' />
-						</video>
-
-						<div class="divider"><i class="icon-circle"></i></div>
-
-						<h3>Facebook Video Embed</h3> -->
-
-						<!-- Include this only once in the Page -->
-						<!-- <div id="fb-root"></div>
-						<script>(function(d, s, id) {
-						  var js, fjs = d.getElementsByTagName(s)[0];
-						  if (d.getElementById(id)) return;
-						  js = d.createElement(s); js.id = id;
-						  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=226255957385129";
-						  fjs.parentNode.insertBefore(js, fjs);
-						}(document, 'script', 'facebook-jssdk'));</script> -->
-
-						<!-- Facebook Video Embed Code -->
-						<!-- <div class="fb-video" data-href="https://www.facebook.com/facebook/videos/10153231379946729/"></div> -->
-
-					</div><!-- .postcontent end -->
-
-					<!-- Sidebar
-					============================================= -->
-					<!-- <div class="sidebar nobottommargin col_last clearfix">
-						<div class="sidebar-widgets-wrap">
-
-							<div class="widget widget_links clearfix">
-
-								<h4>Shortcodes</h4>
-								<ul>
-									<li><a href="animations.html"><div>Animations</div></a></li>
-									<li><a href="buttons.html"><div>Buttons</div></a></li>
-									<li><a href="carousel.html"><div>Carousel</div></a></li>
-									<li><a href="charts.html"><div>Charts</div></a></li>
-									<li><a href="clients.html"><div>Clients</div></a></li>
-									<li><a href="columns-grids.html"><div>Columns</div></a></li>
-									<li><a href="counters.html"><div>Counters</div></a></li>
-									<li><a href="dividers.html"><div>Dividers</div></a></li>
-									<li><a href="featured-boxes.html"><div>Icon Boxes</div></a></li>
-									<li><a href="gallery.html"><div>Galleries</div></a></li>
-									<li><a href="headings-dropcaps.html"><div>Heading Styles</div></a></li>
-									<li><a href="icon-lists.html"><div>Icon Lists</div></a></li>
-									<li><a href="labels-badges.html"><div>Labels</div></a></li>
-									<li><a href="lightbox.html"><div>Lightbox</div></a></li>
-									<li><a href="lists-panels.html"><div>Lists &amp; Panels</div></a></li>
-									<li><a href="maps.html"><div>Maps</div></a></li>
-									<li><a href="media-embeds.html"><div>Media Embeds</div></a></li>
-									<li><a href="modal-popovers.html"><div>Modal Boxes</div></a></li>
-									<li><a href="navigation.html"><div>Navigations</div></a></li>
-									<li><a href="pagination-progress.html"><div>Pagination</div></a></li>
-									<li><a href="pie-skills.html"><div>Pies &amp; Skills</div></a></li>
-									<li><a href="pricing.html"><div>Pricing Boxes</div></a></li>
-									<li><a href="process-steps.html"><div>Process Steps</div></a></li>
-									<li><a href="promo-boxes.html"><div>Promo Boxes</div></a></li>
-									<li><a href="quotes-blockquotes.html"><div>Blockquotes</div></a></li>
-									<li><a href="responsive.html"><div>Responsive</div></a></li>
-									<li><a href="sections.html"><div>Sections</div></a></li>
-									<li><a href="social-icons.html"><div>Social Icons</div></a></li>
-									<li><a href="style-boxes.html"><div>Alert Boxes</div></a></li>
-									<li><a href="styled-icons.html"><div>Styled Icons</div></a></li>
-									<li><a href="tables.html"><div>Tables</div></a></li>
-									<li><a href="tabs.html"><div>Tabs</div></a></li>
-									<li><a href="testimonials-twitter.html"><div>Testimonials</div></a></li>
-									<li><a href="thumbnails-slider.html"><div>Thumbnails</div></a></li>
-									<li><a href="toggles-accordions.html"><div>Toggles</div></a></li>
-								</ul>
-
+						<div class="entry clearfix">
+							<div class="entry-image">
+								<a href="img/schools/ashesi/yearbookCovers/2018.png" data-lightbox="image"><img class="image_fade" src="yrbkImages/YearbookImage.png" alt="Standard Post with Image"></a>
 							</div>
-
-							<div class="widget clearfix">
-
-								<h4>Dribbble Shots</h4>
-								<div id="dribbble-widget" class="dribbble-shots masonry-thumbs" data-user="envato" data-count="16" data-type="user"></div>
-
+							<div class="entry-title">
+								<h2><a href="issuuembed.html">Class of 2018 Yearbook!</a></h2>
 							</div>
-
-							<div class="widget widget-twitter-feed clearfix">
-
-								<h4>Twitter Feed</h4>
-								<ul class="iconlist twitter-feed" data-username="envato" data-count="2">
-									<li></li>
-								</ul>
-
-								<a href="#" class="btn btn-secondary btn-sm fright">Follow Us on Twitter</a>
-
+							<ul class="entry-meta clearfix">
+								<li><i class="icon-calendar3"></i> 23rd June, 2018</li>
+								<!-- <li><a href="blog-single.html#comments"><i class="icon-comments"></i> 13</a></li>
+								<li><a href="#"><i class="icon-camera-retro"></i></a></li> -->
+							</ul>
+							<div class="entry-content">
+								<p>Experience the vibe of the 2018 Graduating Class!</p>
+								<!-- <a href="blog-single.html"class="more-link">Open Yearbook</a> -->
+								<a href="blog-single.html"class="more-link">View Class Photoshoot Images <i class="icon-camera-retro"></i></a>
 							</div>
-
 						</div>
-					</div><! .sidebar end -->
+
+						<div class="entry clearfix">
+							<div class="entry-image">
+								<a href="yrbkImages/YearbookImage.png" data-lightbox="image"><img class="image_fade" src="yrbkImages/YearbookImage.png" alt="Standard Post with Image"></a>
+							</div>
+							<div class="entry-title">
+								<h2><a href="blog-single.html">Class of 2018 Yearbook!</a></h2>
+							</div>
+							<ul class="entry-meta clearfix">
+								<li><i class="icon-calendar3"></i> 23rd June, 2018</li>
+								<!-- <li><a href="blog-single.html#comments"><i class="icon-comments"></i> 13</a></li>
+								<li><a href="#"><i class="icon-camera-retro"></i></a></li> -->
+							</ul>
+							<div class="entry-content">
+								<p>Experience the vibe of the 2018 Graduating Class!</p>
+								<!-- <a href="blog-single.html"class="more-link">Open Yearbook</a> -->
+								<a href="blog-single.html"class="more-link">View Class Photoshoot Images <i class="icon-camera-retro"></i></a>
+							</div>
+						</div>
+
+						<div class="entry clearfix">
+							<div class="entry-image">
+								<a href="yrbkImages/YearbookImage.png" data-lightbox="image"><img class="image_fade" src="yrbkImages/YearbookImage.png" alt="Standard Post with Image"></a>
+							</div>
+							<div class="entry-title">
+								<h2><a href="blog-single.html">Class of 2018 Yearbook!</a></h2>
+							</div>
+							<ul class="entry-meta clearfix">
+								<li><i class="icon-calendar3"></i> 23rd June, 2018</li>
+								<!-- <li><a href="blog-single.html#comments"><i class="icon-comments"></i> 13</a></li>
+								<li><a href="#"><i class="icon-camera-retro"></i></a></li> -->
+							</ul>
+							<div class="entry-content">
+								<p>Experience the vibe of the 2018 Graduating Class!</p>
+								<!-- <a href="blog-single.html"class="more-link">Open Yearbook</a> -->
+								<a href="blog-single.html"class="more-link">View Class Photoshoot Images <i class="icon-camera-retro"></i></a>
+							</div>
+						</div>
+
+					</div><!-- #posts end -->
+
+					<!-- Pagination
+					============================================= -->
+					<div class="row mb-3">
+						<div class="col-12">
+							<a href="#" class="btn btn-outline-secondary float-left">&larr; Newer</a>
+							<a href="#" class="btn btn-outline-dark float-right">Older &rarr;</a>
+						</div>
+					</div>
+					<!-- .pager end -->
 
 				</div>
 
@@ -279,7 +228,7 @@
 
 				<!-- Footer Widgets
 				============================================= -->
-				<!-- <div class="footer-widgets-wrap clearfix">
+				<div class="footer-widgets-wrap clearfix">
 
 					<div class="col_two_third">
 
@@ -432,7 +381,7 @@
 
 					</div>
 
-				</div><! .footer-widgets-wrap end -->
+				</div><!-- .footer-widgets-wrap end -->
 
 			</div>
 
