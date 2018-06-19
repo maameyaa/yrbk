@@ -3343,9 +3343,9 @@ body:not(.stretched) .slider-parallax .slider-parallax-inner { left: auto; }
 
 #page-title {
 	position: relative;
-	padding: 50px 0;
-	background-color: #F5F5F5;
-	border-bottom: 1px solid #EEE;
+	padding: 30px 0;
+	background-color: #FFF;
+	/* border-bottom: 1px solid #EEE; */
 }
 
 #page-title .container { position: relative; }
