@@ -5,7 +5,7 @@ $(document).ready(function(){
 
   console.log(folder);
 
-  for(i=1; i<=8; i++ ){
+  for(i=1; i<=127; i++ ){
     // console.log(i);
 
     $("#photos").append( "<div class='col-6 col-lg-3' style='margin-bottom: 30px;'><a onclick='getimage(i)' data-toggle='modal' data-target='#myModal'><img alt='100%x180' src='"+ folder + i + '.jpg'+ "' class='img-thumbnail' style='height: 100%; width: 100%; display: block;'></a></div>"  );
@@ -18,7 +18,16 @@ $(document).ready(function(){
 
     $("#photos").append( "<div class='modal fade' id='myModal' tabindex='-1' role='dialog' aria-labelledby='myModalLabel' aria-hidden='true'><div class='modal-dialog'><div class='modal-body'><div class='modal-content'><div class='modal-body'><h4>Text in a modal</h4><img alt='100%x180' src='"+ folder + x + '.jpg'+ "' class='img-thumbnail' style='height: 100%; width: 100%; display: block;'></div></div></div></div></div>");
   }
+
 });
+
+
+function groupimages(){
+   var folder = "img/schools/ashesi/classes/2018/group";
+
+   $("#photos").remove()
+
+ }
 
 
 
