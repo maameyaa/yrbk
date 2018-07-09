@@ -3,7 +3,7 @@
 $(document).ready(function(){
   var folder = "img/schools/ashesi/classes/2018/";
 
-  console.log(folder);
+  //console.log(folder);
 
   for(i=1; i<=127; i++ ){
     // console.log(i);
@@ -23,12 +23,42 @@ $(document).ready(function(){
 
 
 function groupimages(){
-   var folder = "img/schools/ashesi/classes/2018/group";
 
-   $("#photos").remove()
+   var folder = "img/schools/ashesi/classes/2018/group/";
+
+  // $("#photos").remove();
+
+  var output="";
+
+   for(i=1; i<=76; i++ ){
+      console.log(i);
+
+      output+="<div class='masonry-thumbs grid-2' style='margin-bottom: 30px;'><a onclick='getimage(i)' data-toggle='modal' data-target='#myModal'><img alt='100%x180' src='"+ folder + i + '.jpg'+ "' class='img-thumbnail' style='height: 100%; width: 100%; display: block;'></a></div>" ;
+
+
+   }
+    photos.innerHTML=output;
 
  }
 
+ function singleimages(){
+
+    var folder = "img/schools/ashesi/classes/2018/";
+
+   // $("#photos").remove();
+
+   var output="";
+
+    for(i=1; i<=76; i++ ){
+       console.log(i);
+
+       output+="<div class='col-6 col-lg-3' style='margin-bottom: 30px;'><a onclick='getimage(i)' data-toggle='modal' data-target='#myModal'><img alt='100%x180' src='"+ folder + i + '.jpg'+ "' class='img-thumbnail' style='height: 100%; width: 100%; display: block;'></a></div>" ;
+
+
+    }
+     photos.innerHTML=output;
+
+  }
 
 
 
