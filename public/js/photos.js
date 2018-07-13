@@ -24,24 +24,28 @@ $(document).ready(function(){
 
 function groupimages(){
 
+  $("#photos").remove();
+
    var folder = "img/schools/ashesi/classes/2018/group/";
 
   // $("#photos").remove();
 
   var output="";
 
-   for(i=1; i<=76; i++ ){
+   for(i=1; i<=75; i++ ){
       console.log(i);
 
-      output+="<div class='masonry-thumbs grid-2' style='margin-bottom: 30px;'><a onclick='getimage(i)' data-toggle='modal' data-target='#myModal'><img alt='100%x180' src='"+ folder + i + '.jpg'+ "' class='img-thumbnail' style='height: 100%; width: 100%; display: block;'></a></div>" ;
+      output+="<div class='entry clearfix'><div class='entry-image'><a href=''><img class='image_fade'  src='"+ folder + i + '.jpg'+ "'></a></div></div>" ;
 
 
    }
-    photos.innerHTML=output;
+    console.log(output);
+    groups.innerHTML=output;
 
  }
 
  function singleimages(){
+   $("#groups").remove();
 
     var folder = "img/schools/ashesi/classes/2018/";
 
