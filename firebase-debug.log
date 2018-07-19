@@ -1,0 +1,63 @@
+[debug] [2018-07-19T11:04:05.028Z] ----------------------------------------------------------------------
+[debug] [2018-07-19T11:04:05.031Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2018-07-19T11:04:05.031Z] CLI Version:   3.19.0
+[debug] [2018-07-19T11:04:05.031Z] Platform:      darwin
+[debug] [2018-07-19T11:04:05.032Z] Node Version:  v8.9.3
+[debug] [2018-07-19T11:04:05.032Z] Time:          Thu Jul 19 2018 11:04:05 GMT+0000 (GMT)
+[debug] [2018-07-19T11:04:05.032Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-07-19T11:04:05.057Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-07-19T11:04:05.057Z] > authorizing via signed-in user
+[debug] [2018-07-19T11:04:05.059Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-07-19T11:04:05.060Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/kNZOw3xp96-xSYvusGIR2jW9k95WzKuA04i_AtOgrjRv9VUtyrIWjIfcDCWQ18E1',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Thu Jul 19 2018 11:04:05 GMT+0000 (GMT)
+[debug] [2018-07-19T11:04:05.795Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-19T11:04:05.811Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/yrbk-d734e  
+  
+ Thu Jul 19 2018 11:04:05 GMT+0000 (GMT)
+[debug] [2018-07-19T11:04:07.045Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-19T11:04:07.047Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/yrbk-d734e/tokens  
+  
+ Thu Jul 19 2018 11:04:07 GMT+0000 (GMT)
+[debug] [2018-07-19T11:04:07.846Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'yrbk-d734e'...
+[info] 
+[info] i  deploying database, storage, hosting
+[info] i  database: checking rules syntax...
+[debug] [2018-07-19T11:04:09.683Z] >>> HTTP REQUEST PUT https://yrbk-d734e.firebaseio.com/.settings/rules.json?dryRun=true  
+ {
+  "rules": {
+    ".read": "auth != null",
+    ".write": "auth != null"
+  }
+}
+ 
+ Thu Jul 19 2018 11:04:09 GMT+0000 (GMT)
+[debug] [2018-07-19T11:04:11.201Z] <<< HTTP RESPONSE 200
+[info] ✔  database: rules syntax for database yrbk-d734e is valid
+[debug] [2018-07-19T11:04:11.203Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/yrbk-d734e  
+  
+ Thu Jul 19 2018 11:04:11 GMT+0000 (GMT)
+[debug] [2018-07-19T11:04:12.841Z] <<< HTTP RESPONSE 200
+[info] i  storage: checking storage.rules for compilation errors...
+[debug] [2018-07-19T11:04:12.846Z] >>> HTTP REQUEST POST https://firebaserules.googleapis.com/v1/projects/yrbk-d734e:test  
+ { source: { files: [ [Object] ] } } 
+ Thu Jul 19 2018 11:04:12 GMT+0000 (GMT)
+[debug] [2018-07-19T11:04:14.308Z] <<< HTTP RESPONSE 200
+[info] ✔  storage: rules file storage.rules compiled successfully
+[info] i  storage: uploading rules storage.rules...
+[debug] [2018-07-19T11:04:14.313Z] >>> HTTP REQUEST POST https://firebaserules.googleapis.com/v1/projects/yrbk-d734e/rulesets  
+ { source: { files: [ [Object] ] } } 
+ Thu Jul 19 2018 11:04:14 GMT+0000 (GMT)
+[debug] [2018-07-19T11:04:15.536Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-19T11:04:15.536Z] [rules] created ruleset projects/yrbk-d734e/rulesets/c3c5b97c-2391-48a5-92de-26fda195e91d
+[info] i  hosting: preparing public directory for upload...
+[debug] [2018-07-19T11:04:45.812Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/yrbk-d734e/uploads/-LHmCYFS8jHOSOsbRPR3?fileCount=1089&message=  
+  
+ Thu Jul 19 2018 11:04:45 GMT+0000 (GMT)
