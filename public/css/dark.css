@@ -148,8 +148,8 @@ body.top-search-open .dark #header-wrap:not(.not-dark) #top-search a,
 .dark #header-wrap:not(.not-dark) #side-panel-trigger a:hover,
 .dark #header-wrap:not(.not-dark) #top-account a:hover,
 .dark #header-wrap:not(.not-dark) #top-search form input {
-	color: #EEE;
-	text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+	color: #fff;
+	
 }
 
 .dark #header.full-header #header-wrap:not(.not-dark) #primary-menu > ul,
@@ -1684,4 +1684,3 @@ body #side-panel.dark #side-panel-trigger-close a {
 	.dark .pricing-box.pricing-extended .pricing-action-area { border-top-color: rgba(255,255,255,0.15); }
 
 }
-
