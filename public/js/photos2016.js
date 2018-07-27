@@ -5,7 +5,7 @@ $(document).ready(function(){
 
   //console.log(folder);
 
-  for(i=1; i<=115; i++ ){
+  for(i=1; i<=97; i++ ){
     // console.log(i);
 
     $("#photos").append( "<div class='col-6 col-lg-3' style='margin-bottom: 30px;'><a onclick='getimage(i)' data-toggle='modal' data-target='#myModal'><img alt='100%x180' src='"+ folder + i + '.jpg'+ "' class='img-thumbnail' style='height: 100%; width: 100%; display: block;'></a></div>"  );
@@ -33,7 +33,7 @@ function groupimages(){
 
   var output="";
 
-   for(i=1; i<=43; i++ ){
+   for(i=1; i<=39; i++ ){
 
       output+="<div class='entry clearfix'><div class='entry-image'><a href=''><img class='image_fade'  src='"+ folder + i + '.jpg'+ "'></a></div></div>" ;
 
