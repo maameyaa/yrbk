@@ -1668,9 +1668,9 @@
 		height: 20px;
 	}
 
-	#home-text{
-		font-size: 27px;
-		font-weight: bold;
+	#home-text, #home-text1, #home-text2, #home-text3, #home-text4, #home-text5{
+		font-size: 25px;
+		font-weight: 600;
 
 	}
 
