@@ -2806,7 +2806,7 @@ body.side-push-panel.stretched .slider-parallax-inner {
   right:0;
   bottom:0;
   left:0;
-  z-index:9999;
+  z-index:9998;
   background-color:black;
   color:white;
   padding:10% 0;

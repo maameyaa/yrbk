@@ -246,7 +246,7 @@
 
 	#logo {
 		display: block;
-		height: 100px;
+		height: 40px;
 		float: none;
 		margin: 0 auto 0 !important;
 		max-width: none;
@@ -265,7 +265,7 @@
 	#primary-menu-trigger {
 		opacity: 1;
 		pointer-events: auto;
-		top: 25px;
+		top: 0px;
 		margin-top: 0;
 		left: 0;
 		z-index: 1;
@@ -1506,6 +1506,7 @@
 
 	#top-cart { display: none; }
 
+
 	#top-search a { right: 40px; }
 
 	#top-search form input { padding-right: 55px; }
@@ -1661,6 +1662,19 @@
 
 	.button.button-desc span { font-size: 11px; }
 
+	#homebuttons {
+		margin-top: 5px;
+		width: 50px;
+		height: 20px;
+	}
+
+	#home-text{
+		font-size: 27px;
+		font-weight: bold;
+
+	}
+
+
 }
 
 
@@ -1739,4 +1753,3 @@ only screen and (                min-resolution: 2dppx) and (max-width: 991px) {
 	#logo a.standard-logo { display: none; }
 	#logo a.retina-logo { display: inline-block; }
 }
-
