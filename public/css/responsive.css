@@ -1666,6 +1666,14 @@
 		margin-top: 5px;
 		width: 50px;
 		height: 20px;
+		padding: 0px 9px;
+
+	}
+
+	#homespan1, #homespan2, #homespan3{
+		margin-left: 0px;
+		font-size: 17px;
+		font-weight: 600;
 	}
 
 	#home-text, #home-text1, #home-text2, #home-text3, #home-text4, #home-text5{
