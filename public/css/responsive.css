@@ -1662,7 +1662,7 @@
 
 	.button.button-desc span { font-size: 11px; }
 
-	#homebuttons {
+	#homebutton1, #homebuttons2, #homebutton3{
 		margin-top: 5px;
 		width: 50px;
 		height: 20px;
